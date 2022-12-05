@@ -1,40 +1,17 @@
-#include<iostream>
+#include<iostram>
 using namespace std;
 
 int main()
 {
     int *p = NULL;
 
-    p = new int[5]; // C++ & Java
-    // p = (int *)malloc(5 * sizeof(int));
+    p = new int[10];
+// p = (int *)malloc(10 * sizeof(int));
 
-    // Use the memory
+// use the memory
 
-    delete []p; // There is no such line in Java
+    delete []p;
     // free(p);
 
     return 0;
 }
-
-int * p = NULL;
-
-p = new int;
-
-
-
-int * q = NULL;
-
-q = new int(5);
-
-
-int * x = NULL;
-
-x = new int[5];
-
-
-
-delete p;
-
-delete q;
-
-delete []x;

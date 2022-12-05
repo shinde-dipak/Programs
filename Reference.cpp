@@ -1,13 +1,14 @@
 #include<iostream>
-
 using namespace std;
 
-
 int main()
+
 {
+    int no = 11;
 
-    cout<<"Jay Ganesh\n";
+    int &x = no;
 
+    int *p = &no;
 
     return 0;
 }

@@ -6,6 +6,7 @@ class Circle
     public:                         // Accesss specifier
         float PI;                   // Characteristics
         float Radius;
+
         Circle()                    // Default constructor
         {   
             PI = 3.14;
@@ -16,26 +17,30 @@ class Circle
             PI = A;
             Radius = B;
         }
-        void Display()              // Concrete method          // 1000
+        void Display()              // Concrete method
         {
             cout<<"Value of radius is : "<<Radius<<"\n";
         }
-        virtual float Area() = 0;           // Abstract method  // __
-        virtual float Circumfarance() = 0;  // Abstract method  // __
+        virtual float Area() = 0;           // Abstract method
+        virtual float Circumfarance() = 0;  // Abstract method
 };
+
 class Marvellous : public Circle
 {
     public:
         Marvellous() : Circle()
-        {}
+        {
+        }
         Marvellous(float X, float Y) : Circle(X,Y)
-        {}
-        float Area()                // Concrete method      // 2000
+        {
+        }
+
+        float Area()                // Concrete method
         {
             float Ans = PI * Radius * Radius;
             return Ans;
         }
-        float Circumfarance()       // Concrete method      // 3000
+        float Circumfarance()       // Concrete method
         {
             float Ans = 0.0;
             Ans = 2 * PI * Radius;

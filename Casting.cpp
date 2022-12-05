@@ -1,31 +1,29 @@
-#include<iostream>
+#include<iostram.h>
 using namespace std;
 
 class Base
 {
-    public:
-        int A,B;
+    public :
+    int A ,B;
 };
 
 class Derived : public Base
 {
-    public:
-        int X,Y;
-
-};
+    public :
+    int X ,Y;
 
 int main()
 {
-    Base * bp = NULL;
-    Derived *dp = NULL;
+ Base *bp = NULL;
+ Derived *dp = NULL;
 
-    Base bobj;
-    Derived dobj;
+ Base bobj;
+ Derived dobj;
 
-    bp = &bobj;     // No casting       A
-    dp = &dobj;     // No casting       A
-    bp = &dobj;     // Upcasting        A
-    // dp = &bobj;     // Downcasting      NA
+ bp = &bobj;       //no casting    -Allowed
+ dp = &dobj;       //no casting    -Allowed   
+ bp = &dobj;       // up casting   -Allowed 
+ dp = &bobj;       // down casting  -Allowed
 
     return 0;
 }

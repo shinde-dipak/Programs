@@ -4,19 +4,20 @@ using namespace std;
 class Demo
 {
     public:
-        int i;
-        int j;
+    int i;
+    int j;
 
-        Demo()
-        {
-            i = 11;
-            j = 21;
-        }
-        Demo(int x, int y)
-        {
-            i = x;
-            j = y;
-        }
+    Demo()
+    {
+        i = 11;
+        j = 21;
+    }
+    Demo(int x,int y)
+    {
+        i = x;
+        j = y;
+    }
+
 };
 
 int main()
@@ -27,10 +28,5 @@ int main()
     const Demo obj3;
     const Demo obj4(10,20);
 
-    obj1.i++;
-    obj4.i++;
-    obj3.j++;
-    obj1.j++;
-    
     return 0;
 }

@@ -3,31 +3,34 @@ using namespace std;
 
 class Base
 {
-    public:
-        int A,B;
-        void fun()  {   cout<<"Base fun\n"; }       // 1000
-        virtual void gun()  {   cout<<"Base gun\n"; }      // 2000 
-        virtual void sun()  {   cout<<"Base sun\n"; }      // 3000
+    public :
+    int A ,B;
+    void fun() { cout<<"Base fun\n"; }
+    virtual void gun() { cout<<"Base gun\n"; }
+    virtual void sun() { cout<<"Base sun\n"; }
 };
 
 class Derived : public Base
 {
-    public:
-        int X,Y;
-        void gun()  {   cout<<"Derived gun\n";  }       // 4000
-        void run()  {   cout<<"Derived run\n";  }       // 5000
-        virtual void mun()  {   cout<<"Derived mun\n";  }      // 6000
+    public :
+    int X ,Y;
+    void gun() { cout<<"Derived gun\n"; }
+    void run() { cout<<"Derived run\n"; }
+    virtual void mun() { cout<<"Derived mun\n"; }
+    
 };
-
 int main()
 {
-    Base *bp = NULL;
+ //cout<<"Size of base class : "<<sizeof(Base)<<"\n";
+ //cout<<"Size of Derived class : "<<sizeof(Derived)<<"\n";
+    
+    Base * bp = NULL;
     Derived dobj;
-    bp = & dobj;        // Upcasting
+    bp = &dobj;       //Upcasting
 
-    bp->fun();      // CALL 1000
-    bp->gun();      // CALL 2000
-    bp->sun();      // CALL 3000
+    bp->fun();
+    bp->gun();
+    bp->sun();
 
     return 0;
 }

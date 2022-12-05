@@ -3,36 +3,40 @@ using namespace std;
 
 class Base
 {
-    //     int X;
-    public:
-        int i;
-    private:
-        int j;
-    protected:
-        int k;
-    public:
+    public :
+    int i ;
+    private :
+    int j;
+    protected :
+    int k ;
+    public :
         Base()
         {
             i = 10;
             j = 20;
             k = 30;
         }
-        void fun()
-        {
-            cout<<"Value of public i from fun : "<<i<<"\n";  // A
-            cout<<"Value of private j from fun : "<<j<<"\n"; // A
-            cout<<"Value of protected k from fun  : "<<k<<"\n"; // A        
-        }
+    void fun()
+    {
+        cout<<"Value of public i :"<<i<<"\n";
+        cout<<"Value of private j :"<<j<<"\n";
+        cout<<"Value of protected k :"<<k<<"\n";
+    }
 };
 
+/*class Derived : public Base
+{
+
+
+};
+*/
 int main()
 {
-    Base bobj;
-    cout<<"Value of public i : "<<bobj.i<<"\n"; // A
-    //cout<<"Value of private j : "<<bobj.j<<"\n"; // NA
-    //cout<<"Value of protected k : "<<bobj.k<<"\n"; // NA
-    
-    bobj.fun();
+Base bobj ;
+cout<<"Value of public i :"<<bobj.i<<"\n";
+//cout<<"Value of private j :"<<bobj.j<<"\n";
+//cout<<"Value of protected k :"<<bobj.k<<"\n";
 
+bobj.fun();
     return 0;
 }
