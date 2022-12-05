@@ -1,23 +1,18 @@
 #include<stdio.h>
 
-
-
-
-
-
-
-
 int main()
 {
-    int No1 = 10;
+int No1 = 10;
+int No2 = 11;
 
-    int No2 = 11;
+int Ans = 0;
 
-    int Ans = 0;
+Ans = No1 + No2;
 
-    Ans = No1 + No2;
+printf("%d",Ans);
 
-    printf("%d\n",Ans);
+return 0;
 
-    return 0;
 }
+
+

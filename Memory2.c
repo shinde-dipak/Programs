@@ -3,25 +3,18 @@
 
 int main()
 {
-    int size = 0;
-    int *Arr = NULL;
+  int size = 0;
+  int *Arr = NULL;
 
-    printf("Enter the size of array\n");
-    scanf("%d",&size);
+  printf("Enter the size of array\n");
+  scanf("%d",&size);
 
-    Arr = (int *)malloc(sizeof(int) * size);
-    // Arr = (int *)malloc(28);
+  Arr = (int *)malloc(sizeof(int)* size);
+  printf ("Size of p is :\n",sizeof (Arr));
 
-    // Use the memory
+  //use the memory"
 
-    free(Arr);
+  free(Arr); 
 
-    return 0;
+    return 0;  
 }
-
-
-
-// void * malloc(int no);
-
-
-// void free(void * ptr);

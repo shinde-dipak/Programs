@@ -1,8 +1,12 @@
 #include<stdio.h>
 
-// Definations of global variables
-// Scope : Throughout the program
-int No1 = 11;                   // Global variable
+int main()
 
-// Scope : Throughout the file
-static int No2 = 21;            // Global static variable
+{
+int Arr[5] = {10,20,30,40,50};
+
+printf("Base Address of array : %p\n",Arr);
+printf("Base Address of array : %p\n",&Arr);
+printf("Size of array is %d\n",sizeof(Arr));
+return 0;
+}

@@ -2,33 +2,30 @@
 
 struct Demo
 {
-    int i;      // 4
-    float f;    // 4
-    double d;   // 8
-};              // 16  
+    int i;
+    char ch;
+    float f;
+    char ch1;
+    float d;
+
+};
 
 union Hello
 {
-    int i;      // 4
-    float f;    // 4
-    double d;   // 8
-};              // 8
+    int i;
+    float f;
+    double d;
+
+};
+
+
 
 int main()
 {
+
     struct Demo dobj;
-    union Hello hobj;
-
-    printf("Size of the strcucture is : %d\n",sizeof(dobj));
-    printf("Size of the union is : %d\n",sizeof(hobj));
-
-    dobj.i = 11;
-    dobj.f = 90.8;
-    dobj.d = 90.5;
-
-    hobj.d = 90.4;
-    printf("%f\n",hobj.f);
-    printf("%f\n",hobj.d);
-
+    union Hello hobj;  
+printf("size of Structure Demo is : %d\n",sizeof(dobj));
+printf("size of union : %d\n",sizeof(hobj));
     return 0;
 }

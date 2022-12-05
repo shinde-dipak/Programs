@@ -3,21 +3,17 @@
 
 int main()
 {
-    int Arr[5];     // Static memory allocation
+    int Arr[5];    //static memory allocation
 
     int *p = NULL;
 
-    p = (int *)malloc(sizeof(int) * 5);
+    p = (int *)malloc(sizeof(int)*5);
 
-    // Use the memory
+    // use the memory
 
     free(p);
+    
+    //code
 
-    // code
-
-    return 0;   // memory of Arr gets deallocated at this point
+    return 0;  //memory of Arr gets deallocate at this point
 }
-
-// Prototype of functions
-
-//                  void * malloc(int size);

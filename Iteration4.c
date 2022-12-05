@@ -2,16 +2,16 @@
 
 int main()
 {
-    int Arr[4] = {11,21,51,101};
-    int iCnt = 0;   // Loop Counter
+    int Arr[4] = { 11,21,51,101};
 
-    printf("Elements of array are : \n");
+   int iCnt = 0;
 
-    //      1          2        3
-    for(iCnt = 0; iCnt <= 3; iCnt++)
-    {
-        printf("%d\n",Arr[iCnt]);   // 4
-    }
+    printf("Element of array are : \n");
 
+    for(iCnt = 0; iCnt <=3; iCnt++)
+{
+    printf("%d\n",Arr[iCnt]);
+}   
     return 0;
+
 }

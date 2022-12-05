@@ -2,20 +2,14 @@
 
 int main()
 {
-    int no1 = 10;
-    const int no2 = 10;
+int no1 = 10;
 
-    printf("%d\n",no1);
-    printf("%d\n",no2);
+const int no2 = 10;
 
-    no1++;         // A
-    no2++;          // NA
-    
-    no1 = 20;       // A
-    no2 = 20;       // NA
+printf("%d\n",no1);
 
-    no1--;          // A
-    no2--;          // NA
+printf("%d\n",no2);
 
-    return 0;
+
+ return 0;   
 }
