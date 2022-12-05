@@ -1,25 +1,28 @@
-import java.util.*;      // Inbuilt package
-import Marvellous.Arithematic;     // User defined package
-import Marvellous.PPA.Loop;
+import java.util.*;     //Inbuilt package
+import Marvellous.Arthimatic;   //user defined package
+import Marvellous.PPA.Loop;     // nested Package
+
 class DemoPackage
 {
-     public static void main(String arr[])
-     {
-          Scanner sobj = new Scanner(System.in);
-          System.out.println("Enter first number");
-          int iNo1 = sobj.nextInt();
-          System.out.println("Enter second number");
-          int iNo2 = sobj.nextInt();
+    public static void main(String arr[])
+    {
+        Scanner sobj = new Scanner(System.in);
 
-          Arithematic aobj = new Arithematic(iNo1,iNo2);
+        System.out.println("Enter First number");
+        int iNo1 = sobj.nextInt();
 
-          int iResult = aobj.Addition();
-          System.out.println("Addition is  : "+iResult);
+        System.out.println("Enter Second Number");
+        int iNo2 = sobj.nextInt();
 
-          iResult = aobj.Substraction();
-          System.out.println("Substraction is  : "+iResult);
+        Arthimatic aobj = new Arthimatic(iNo1 , iNo2);
 
-          Loop lobj = new Loop();
-          lobj.Display();
-     }
+        int iResult = aobj.Addition();
+        System.out.println("Addition is : "+iResult);
+
+        iResult = aobj.Substraction();
+        System.out.println("Substraction is : "+iResult);
+    
+        Loops lobj = new Loop()
+        
+    }
 }

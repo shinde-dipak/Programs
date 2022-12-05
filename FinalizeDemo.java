@@ -1,7 +1,8 @@
+
 class Demo
 {
-    public int Size;
-    public int Arr[];
+    int Size;
+    int Arr[];
 
     public Demo(int No)
     {
@@ -16,7 +17,6 @@ class Demo
         Arr = null;
     }
 }
-
 class FinalizeDemo
 {
     public static void main(String s[])

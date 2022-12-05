@@ -1,7 +1,7 @@
+
 class A
 {
-
-
+   
 }
 
 class B extends A
@@ -10,13 +10,13 @@ class B extends A
 
 }
 
-class C extends A
+class C extends B
 {
 
 
 }
 
-class Hierarchal
+class Mutilevel
 {
     public static void main(String p[])
     {

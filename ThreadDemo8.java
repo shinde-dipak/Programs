@@ -4,23 +4,25 @@ class Demo extends Thread
     public void run()
     {
         int i = 0;
-        for(i = 1; i<= 10; i++)
-        {
-            try
-            {
-                System.out.println(Thread.currentThread().getName()+" : "+i);
-                Thread.sleep(500);
-            }
-            catch(InterruptedException obj)
-            {}
+        for(i = 1; i <= 10; i++)
+        {   
+          try
+          {  
+            System.out.println(Thread.currentThread().getName()+" : "+i);
+
+            Thread.sleep(500);
+          }
+          catch(InterruptedException obj)
+          {}
         }
     }
 }
+
 class ThreadDemo8
 {
-    public static void main(String A[])  
+    public static void main(String arg[]) throws InterruptedException
     {
-        System.out.println("Inside main thread");
+        System.out.println("Inside main method");
 
         Demo obj1 = new Demo();
         Demo obj2 = new Demo();
@@ -31,18 +33,12 @@ class ThreadDemo8
         t1.setName("First");
         t2.setName("Second");
 
-        try
-        {
-            t1.start();
-            t1.join();
+        t1.start();  //serial working
+        t1.join();
 
-            t2.start();
-            t2.join();
-        }
-        catch(InterruptedException obj)
-        {}
-        
+        t2.start();
+        t2.join();   
 
-        System.out.println("End of main thread");
+        System.out.println("End of Main thread");      
     }
 }
